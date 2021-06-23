@@ -1,0 +1,133 @@
+.cardWrap{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  margin-top: 2%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  padding: 30px 50px;
+  font-size: 16px;
+  text-align: center;
+  margin: 1% 1% 0% 1%;
+  background-color: rgb(225, 235, 209);
+ 
+}
+
+.card:hover {
+  display: block !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
+
+.media {
+  width: 40%;
+}
+
+.expand {
+  transform: 'rotate(0deg)';
+  margin-left: 'auto';
+}
+.expandOpen {
+  transform: 'rotate(180deg)';
+}
+
+.text{
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: green;
+}
+
+.item{
+  background: #96d16e;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+.title{
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  text-align: center ;
+  color: #85662b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-info{
+  margin-top: 10%;
+  font-family: "Roboto",sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #455845
+}
+.content-date{
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #8b7f75;
+}
+
+.button {
+  margin-left: 45%;
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.p{
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(59, 82, 59);
+}
+ .head{
+  font-family: "Roboto",sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(88, 139, 88);
+  margin: 0px;
+ }
+ .head_div{
+   height: 20vh;
+   background-color: rgb(144, 180, 144);
+ }
