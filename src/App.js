@@ -76,11 +76,11 @@ class App extends Component {
           <p className = "head head_div">
             TOP 5 Movies
             </p>
-            <div>
+            <div className= "button-div">
 
               {this.state.Sort === true
-                ? <p className = "p"> 'Hey you' sort me by rank</p>
-                : <p  className = "p">'Hey you' sort me by release Date</p>}
+                ? <p className = "p"> 'Hey you' sort me by release Date</p>
+                : <p  className = "p">'Hey you' sort me by rank</p>}
             <button className = "button" onClick={this.handleSort}>sort me</button>
           </div>
           {this.mapData()}
